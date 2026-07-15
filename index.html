@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solitario 2048 · Actividad #1</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Solitario 2048</h1>
+            <div class="score-area">
+                <span>Puntos: <strong id="puntos">0</strong></span>
+                <button type="button" id="boton-reiniciar">Reiniciar</button>
+            </div>
+        </header>
+
+        <main>
+            <section id="mazo">
+                <div class="mazo-info">
+                    <h2>Mazo</h2>
+                    <p class="instruccion">Haz clic en una columna para soltar la carta</p>
+                </div>
+                <div id="carta-actual" class="carta" data-valor="2">
+                    <span id="valor-carta-actual">2</span>
+                </div>
+            </section>
+
+            <section id="tablero">
+                <div id="columnas-contenedor">
+                    <div class="columna" id="columna-0" data-columna="0">
+                        <div class="cartas-columna" id="cartas-0"></div>
+                        <div class="limite-columna">Límite: 8 cartas</div>
+                    </div>
+
+                    <div class="columna" id="columna-1" data-columna="1">
+                        <div class="cartas-columna" id="cartas-1"></div>
+                        <div class="limite-columna">Límite: 8 cartas</div>
+                    </div>
+
+                    <div class="columna" id="columna-2" data-columna="2">
+                        <div class="cartas-columna" id="cartas-2"></div>
+                        <div class="limite-columna">Límite: 8 cartas</div>
+                    </div>
+
+                    <div class="columna" id="columna-3" data-columna="3">
+                        <div class="cartas-columna" id="cartas-3"></div>
+                        <div class="limite-columna">Límite: 8 cartas</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="estado-juego">
+                <p id="mensaje-estado">🎯 En curso — coloca tu carta</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
